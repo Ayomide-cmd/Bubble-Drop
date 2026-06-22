@@ -20,7 +20,6 @@ A lightweight, high-performance 2D arcade game built purely with vanilla JavaScr
 bubble-drop/
 │
 ├── index.html       # Application entry point and layout markup
-├── README.md        # Documentation and system manual
 ├── css/
 │   └── style.css    # Layout and flat UI appearance styling
 └── js/
