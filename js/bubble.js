@@ -1,11 +1,11 @@
 class Bubble {
     constructor(canvasWidth, speedMultiplier) {
-        this.radius = Math.random() * 20 + 15; // Size between 15 and 35
+        this.radius = Math.random() * 20 + 15; 
         this.x = Math.random() * (canvasWidth - this.radius * 2) + this.radius;
         this.y = -this.radius;
         this.speed = (Math.random() * 2 + 1) * speedMultiplier;
         
-        // Flat solid palette colors
+        
         const colors = ['#00ffcc', '#ff3366', '#ffcc00', '#3399ff', '#b82ed6'];
         this.color = colors[Math.floor(Math.random() * colors.length)];
     }
@@ -15,7 +15,7 @@ class Bubble {
     }
 
     draw(ctx) {
-        // Main bubble body
+       
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
         ctx.fillStyle = this.color;
@@ -23,7 +23,7 @@ class Bubble {
         ctx.fill();
         ctx.closePath();
 
-        // Highlighting accent
+       
         ctx.beginPath();
         ctx.arc(this.x - this.radius * 0.3, this.y - this.radius * 0.3, this.radius * 0.2, 0, Math.PI * 2);
         ctx.fillStyle = '#ffffff';
@@ -31,6 +31,6 @@ class Bubble {
         ctx.fill();
         ctx.closePath();
         
-        ctx.globalAlpha = 1.0; // Reset canvas alpha state
+        ctx.globalAlpha = 1.0; 
     }
 }
