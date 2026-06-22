@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Drop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="gameContainer">
+        <canvas id="gameCanvas" width="400" height="600"></canvas>
+        <div id="scoreBoard" class="ui-element">Score: 0</div>
+        <div id="livesBoard" class="ui-element">Lives: 3</div>
+        
+        <div id="screenOverlay">
+            <h1 id="overlayTitle">BUBBLE DROP</h1>
+            <p id="overlayText">Pop the bubbles before they hit the ground!</p>
+            <button id="actionBtn">Start Game</button>
+        </div>
+    </div>
+
+    <script src="js/bubble.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
