@@ -1,4 +1,4 @@
-# Bubble Drop
+ # Bubble Drop
 
 A lightweight, high-performance 2D arcade game built purely with vanilla JavaScript, HTML5 Canvas, and modern CSS. The objective is to pop falling bubbles before they breach the lower boundary of the play area.
 
